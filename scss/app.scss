@@ -1,0 +1,52 @@
+@import 'reset/variables' , 'reset/mixins' , 'reset/reset' ,'reset/keyframes';
+
+
+
+
+.contenedor{
+    width: 90%;
+    max-width: 120em;
+    // background-color: lightgray;
+    padding:1em;
+    @include neo( 1 , 1em , 1em);
+}
+.contenedor .ul{
+    width:100%;
+    // background-color: lightblue;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contenedor .li{
+    // background-color: lightgreen;
+    padding: 1em;
+    margin:0 2em 0 0;
+    @include neo( 1 , 1em , 1em);
+    transition: all .5s ease;
+}
+.contenedor .li.activo{
+    background-color: lightskyblue;
+    color:white;
+}
+.contenedor .subcontenedor{
+    min-height: 10vh;
+    // background-color: lightsalmon;
+    position: relative;
+}
+.contenedor .bloque{
+    // background-color: lightseagreen;
+    margin:1em;
+    padding: 1em;
+    position: absolute;
+    top:2em;
+    @include neo( 1 , 1em , 1em);
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all .5s ease;
+}
+.contenedor .bloque.activo{
+    opacity: 1;
+    transform: translateY(0%);
+}
