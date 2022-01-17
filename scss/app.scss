@@ -1,4 +1,4 @@
-@import 'reset/variables' , 'reset/mixins' , 'reset/reset' ,'reset/keyframes';
+@import 'imports/_variables' , 'imports/_mixins' , 'imports/_reset' ,'imports/_keyframes';
 
 
 
@@ -8,7 +8,7 @@
     max-width: 120em;
     // background-color: lightgray;
     padding:1em;
-    @include neo( 1 , 1em , 1em);
+    @include neo( 1 , .5em , .3em);
 }
 .contenedor .ul{
     width:100%;
@@ -23,8 +23,9 @@
     // background-color: lightgreen;
     padding: 1em;
     margin:0 2em 0 0;
-    @include neo( 1 , 1em , 1em);
+    @include neo( 1 , .5em , .3em);
     transition: all .5s ease;
+    cursor: pointer;
 }
 .contenedor .li.activo{
     background-color: lightskyblue;
@@ -41,7 +42,7 @@
     padding: 1em;
     position: absolute;
     top:2em;
-    @include neo( 1 , 1em , 1em);
+    @include neo( 1 , .5em , .3em);
     opacity: 0;
     transform: translateY(50%);
     transition: all .5s ease;
