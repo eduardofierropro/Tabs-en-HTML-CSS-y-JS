@@ -1,4 +1,4 @@
-![Imagen del proyecto](https://github.com/eduardofierropro/Tabs-en-HTML-CSS-y-JS//blob/main/public/assets/home1.png)
+![Imagen del proyecto](https://github.com/eduardofierropro/Tabs-en-HTML-CSS-y-JS/blob/main/assets/home1.png)
 
 # Tabs con Neomorfismo 
 
